@@ -1,7 +1,9 @@
 package com.programacion.servicios;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
+@Component
 public class OperacionesImpl implements Operaciones{
 
     @Autowired
@@ -13,7 +15,7 @@ public class OperacionesImpl implements Operaciones{
 
     @Override
     public int sumar(int x, int y) {
-        servicio.log("Inicializando suma");
+        servicio.log("Inicializando suma con configuracion de clases y anotaciones");
         return x+y;
     }
 }
