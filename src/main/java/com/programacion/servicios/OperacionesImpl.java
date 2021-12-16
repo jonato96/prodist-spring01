@@ -15,7 +15,7 @@ public class OperacionesImpl implements Operaciones{
 
     @Override
     public int sumar(int x, int y) {
-        servicio.log("Inicializando suma con configuracion de clases y anotaciones");
+        servicio.log("Inicializando suma con configuracion de clases, anotaciones y productor");
         return x+y;
     }
 }
